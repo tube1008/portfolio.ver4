@@ -1,0 +1,1260 @@
+* {scroll-behavior: smooth;}
+body, html {overflow-x: hidden; width: 100%; }
+/* body > * {min-width: 390px;} */
+body > * {min-width: 1600px;}
+header {}
+header .menuWrap {
+	width: 100%;
+	display: flex; flex-flow: row nowrap;
+	justify-content: space-between;
+	position: fixed;
+    left: 0; top: 0; z-index: 900;
+	padding: 0 40px;
+	background: rgba(255, 255, 255, 0.5);
+}
+header .menuWrap .gnb {
+	display: flex; flex-flow: row nowrap;
+}
+header .menuWrap .gnb li {padding: 20px 25px;}
+header .menuWrap .gnb li a {
+	font-size: 1.875rem; font-weight: 600;
+	font-family: "Alata", sans-serif;
+}
+header .menuWrap p {
+	font-size: 1.875rem; font-weight: 600;
+	padding: 20px 25px;
+	font-family: "Alata", sans-serif;
+}
+header .menuWrap .gnb li a:hover {
+	color: #fff;
+	transition: 0.3s;
+}
+/* home */
+main .home {
+	height: 100vh;
+}
+main .home h1 {
+	font-size: 13.875rem; font-weight: 600;
+	font-family: "Alata", sans-serif;
+	color: #2A420A;
+	text-align: center;
+	padding: 30px 0;
+	letter-spacing: 8px;
+}
+main .home .homeBox {
+	display: flex; flex-flow: row nowrap;
+	justify-content: center;
+}
+main .home .homeBox .detail {
+	display: flex; flex-flow: column nowrap;
+	justify-content: space-between;
+}
+main .home .homeBox .detail .job {
+	font-size: 3.5rem; font-weight: 600;
+	font-family: "Alata", sans-serif;
+}
+main .home .homeBox .detail .name {
+	font-size: 3.5rem; font-weight: 600;
+	font-family: "Alata", sans-serif;
+}
+main .home .homeBox .bgimage {
+	margin-left: 17%;
+}
+main .home .homeBox .bgimage img {
+	width: 1100px; height: 550px;
+}
+/* about */
+main .about {
+	padding: 60px;
+	height: 100vh;
+	/* position: relative; */
+}
+main .about .background {
+	width: 1600px;
+	margin: 0 auto;
+	margin-top: 2%;
+	background: #fafafa;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 30px;
+	/* position: absolute; 
+	transform: translate(-50%, 0%) */
+}
+main .about .background .title {
+	padding: 30px;
+}
+main .about .background .title h1 {
+	font-size: 2.5rem; font-weight: 600;
+	font-family: "Alata", sans-serif;
+	color: #2A420A;
+}
+main .about .background .aboutBox {
+	padding: 0 35px 35px 35px;
+	display: flex; flex-flow: row nowrap;
+	justify-content: center;
+}
+main .about .background .aboutBox .detailPage .photo {padding: 0 30px;}
+main .about .background .aboutBox .detailPage .photo img {
+	height: 450px;
+	border-radius: 50%;
+}
+main .about .background .aboutBox .profile {
+	display: flex; flex-flow: column nowrap;
+	padding-left: 35px;
+}
+main .about .background .aboutBox .profile .top {
+	display: flex; flex-flow: row nowrap;
+	padding: 0 25px;
+}
+main .about .background .aboutBox .profile .top .text p {
+	font-size: 1.75rem;
+	font-family: "Alata", sans-serif;
+	padding:0 50px 20px 0;
+}
+main .about .background .aboutBox .profile .top .text p span {
+	font-size: 1.5rem;
+}
+main .about .background .aboutBox .profile .top .text p {
+	padding-bottom: 20px;
+}
+main .about .background .aboutBox .profile .btm {
+	display: flex; flex-flow: column nowrap;
+	padding: 30px 25px 0 25px;
+}
+main .about .background .aboutBox .profile .btm .detail {
+	padding-bottom: 30px;
+}
+main .about .background .aboutBox .profile .btm .detail h2 {
+	font-size: 1.75rem;
+	font-family: "Alata", sans-serif;
+}
+main .about .background .aboutBox .profile .btm .education p {
+	font-size: 1.5rem; line-height: 1.5;
+}
+main .about .background .aboutBox .profile .btm .detail p {
+	font-size: 1.5rem;
+}
+main .sm_soft {
+	padding-bottom: 40px;
+}
+/* main .site_go {
+	font-size: 1.5rem; font-weight: 600; 
+	padding: 13px 26px;
+	border: 1px solid #2A420A;
+	border-radius: 50px;
+}
+main .site_go:hover {
+	transition: 0.3s;
+	background: #2A420A;
+	color: #fff;
+} */
+/* skill */
+main .skill {
+	padding: 60px;
+	height: 100vh;
+}
+main .skill .background {
+	width: 1600px; 
+	margin: 0 auto;
+	margin-top: 3%;
+	background: #fafafa;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 30px;
+	position: relative;
+	/* position: relative;
+	position: absolute; left: 4%; top: 18%; */
+}
+main .skill .background .title {
+	padding: 40px;
+
+}
+main .skill .background .title h1 {
+	font-size: 2.5rem; font-weight: 600;
+	font-family: "Alata", sans-serif;
+	color: #2A420A;
+}
+main .skill .background .title span {
+	font-size: 1.5rem; font-weight: 600;
+	font-family: "Alata", sans-serif;
+	position: absolute; left: 7%; top: 16%; rotate: -10deg;
+	animation: pingpong 1s linear infinite alternate-reverse;
+}
+@keyframes pingpong {
+	0% {transform: translateY(0);}
+	100% {transform: translateY(10px);}
+}
+main .skill .background .skillBox {
+	padding: 40px;
+}
+main .skill .background .skillBox #skills {
+	display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, auto); 
+    gap: 50px;
+}
+main .skill .background .skillBox #skills .item {
+	text-align: center; cursor: pointer;
+	position: relative; 
+}
+main .skill .background .skillBox #skills .item img {
+	width: 100px;
+}
+main .skill .background .skillBox #skills .item span {
+	padding: 25px;
+	font-size: 0.875rem;
+	width: 300px; height: 200px;
+	background: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	display: flex; align-items: center;
+	text-align: left;
+	position: absolute; left: 20px; top: -40px; z-index: 999;
+	line-height: 1.5;
+	opacity: 0;
+}
+main .skill .background .skillBox #skills .item span:hover {
+	opacity: 1;
+	transition: 0.5s;
+}
+/* project */
+main .project {
+	padding: 60px;
+	height: 100vh;
+	position: relative;
+}
+main .project .background {
+	width: 1600px; 
+	margin: 0 auto;
+	margin-top: 1%;
+	background: #fafafa;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 30px;
+	position: relative;
+	/* position: absolute; left: 4%; top: 7%; */
+}
+main .project .background .title {
+	padding: 30px;
+}
+main .project .background .title h1 {
+	font-size: 2.5rem; font-weight: 600;
+	font-family: "Alata", sans-serif;
+	color: #2A420A;
+}
+/* project slide1 */
+main .project .background #projectContainer .myProject .project_01 {
+	display: flex; flex-flow: row nowrap;
+	justify-content: center;
+	padding: 35px;
+}
+main .project .background #projectContainer .myProject .project_01 .page .detail {
+	padding: 50px;
+}
+main .project .background #projectContainer .myProject .project_01 .page .detail h2 {
+	font-size: 2rem; font-weight: 600;
+	font-family: "Alata", sans-serif;
+}
+main .project .background #projectContainer .myProject .project_01 .page .detail p {
+	padding: 10px 0;
+	font-size: 1rem;
+	line-height: 1.5; 
+}
+main .project .background #projectContainer .myProject .project_01 .page .detail p span {
+	font-weight: 600; 
+}
+main .project .background #projectContainer .myProject .project_01 .page .detail .data {
+	text-align: center;
+}
+main .project .background #projectContainer .myProject .project_01 .page .detail .data .git {
+	padding: 10px; font-size: 1.25rem; font-weight: 600;
+	font-family: "Alata", sans-serif;
+	color: #fff; letter-spacing: 2px;
+	background: #2A420A; border-radius: 15px;
+	margin-right: 30px;
+}
+main .project .background #projectContainer .myProject .project_01 .page .detail .data .git:hover {
+	background: #fff; color: #2A420A; border: 1px solid #2A420A;
+	transition: 1s;
+}
+main .project .background #projectContainer .myProject .project_01 .page .detail .data .plan {
+	padding: 10px; font-size: 1.25rem; font-weight: 600;
+	font-family: "Alata", sans-serif;
+	letter-spacing: 2px;
+	background: #fff; color: #2A420A; border: 1px solid #2A420A;
+	border-radius: 15px;
+	margin-right: 30px;
+}
+main .project .background #projectContainer .myProject .project_01 .page .detail .data .plan:hover {
+	background: #2A420A; color: #fff; border: 1px solid #2A420A;
+	transition: 1s;
+} 
+main .project .background #projectContainer .myProject .project_01 .page .detail .skills {
+	display: flex; flex-flow: row nowrap;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+main .project .background #projectContainer .myProject .project_01 .page .detail .skills p {
+	padding: 5px; border-radius: 10px;
+	background: #eee;
+}
+main .project .background #projectContainer .myProject .project_01 .mainpage {
+	position: relative;
+}
+main .project .background #projectContainer .myProject .project_01 .mainpage img {
+	width: 900px; height: 600px; border-radius: 30px;
+}
+main .project .background #projectContainer .myProject .project_01 .mainpage:hover .bg {
+	display: block;
+}
+main .project .background #projectContainer .myProject .project_01 .mainpage .bg {
+	text-align: center; position: absolute; left: 0; top: 0px; 
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 900px; height: 600px; border-radius: 30px;
+	display: none;
+}
+main .project .background #projectContainer .myProject .project_01 .mainpage .bg span {
+	font-size: 2.5rem; color: #fff; width: 100%;
+    position: absolute; left: 0; top: 45%;
+}
+/* project slide2 */
+main .project .background #projectContainer .myProject .project_02 {
+	display: flex; flex-flow: row nowrap;
+	justify-content: center;
+	padding: 50px;
+}
+main .project .background #projectContainer .myProject .project_02 .page .detail {
+	padding: 50px;
+}
+main .project .background #projectContainer .myProject .project_02 .page .detail h2 {
+	font-size: 2rem; font-weight: 600;
+	font-family: "Alata", sans-serif;
+}
+main .project .background #projectContainer .myProject .project_02 .page .detail h2 span {
+	font-size: 1rem; font-weight: 600;
+}
+main .project .background #projectContainer .myProject .project_02 .page .detail p {
+	padding: 10px 0 20px 0;
+	font-size: 1rem;
+	line-height: 1.5; 
+}
+main .project .background #projectContainer .myProject .project_02 .page .detail .git {
+	padding: 10px; font-size: 1.25rem; font-weight: 600;
+	font-family: "Alata", sans-serif;
+	color: #fff; letter-spacing: 2px;
+	background: #2A420A; border-radius: 15px;
+	margin-right: 30px;
+}
+main .project .background #projectContainer .myProject .project_02 .page .detail .git:hover {
+	background: #fff; color: #2A420A; border: 1px solid #2A420A;
+	transition: 1s;
+}
+main .project .background #projectContainer .myProject .project_02 .page .detail .skills {
+	display: flex; flex-flow: row nowrap;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+main .project .background #projectContainer .myProject .project_02 .page .detail .skills p {
+	padding: 5px; border-radius: 10px;
+	background: #eee; margin-right: 10px;
+}
+main .project .background #projectContainer .myProject .project_02 .mainpage {
+	position: relative;
+}
+main .project .background #projectContainer .myProject .project_02 .mainpage img {
+	width: 900px; height: 600px; border-radius: 30px;
+}
+main .project .background #projectContainer .myProject .project_02 .mainpage:hover .bg {
+	display: block;
+}
+main .project .background #projectContainer .myProject .project_02 .mainpage .bg {
+	text-align: center; position: absolute; left: 0; top: 0px; 
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 900px; height: 600px; border-radius: 30px;
+	display: none;
+}
+main .project .background #projectContainer .myProject .project_02 .mainpage .bg span {
+	font-size: 2.5rem; color: #fff; width: 100%;
+    position: absolute; left: 0; top: 45%;
+}
+/* project slide3 */
+main .project .background #projectContainer .myProject .project_03 {
+	display: flex; flex-flow: row nowrap;
+	justify-content: center;
+	padding: 50px;
+}
+main .project .background #projectContainer .myProject .project_03 .page .detail {
+	padding: 50px;
+}
+main .project .background #projectContainer .myProject .project_03 .page .detail h2 {
+	font-size: 2rem; font-weight: 600;
+	font-family: "Alata", sans-serif;
+}
+main .project .background #projectContainer .myProject .project_03 .page .detail p {
+	padding: 10px 0 20px 0;
+	font-size: 1rem;
+	line-height: 1.5; 
+}
+main .project .background #projectContainer .myProject .project_03 .page .detail .skills {
+	display: flex; flex-flow: row nowrap;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+main .project .background #projectContainer .myProject .project_03 .page .detail .skills p {
+	padding: 5px; border-radius: 10px;
+	background: #eee;
+}
+main .project .background #projectContainer .myProject .project_03 .mainpage {
+	position: relative; right: -4%;
+	width: 700px;
+}
+main .project .background #projectContainer .myProject .project_03 .mainpage img {
+	width: 90%;
+}
+main .project .background #projectContainer .myProject .project_03 .mainpage:hover .bg {
+	display: block;
+}
+main .project .background #projectContainer .myProject .project_03 .mainpage .bg {
+	text-align: center; position: absolute; left: 0; top: 0px; 
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 90%; height: 100%; border-radius: 20px;
+	display: none;
+}
+main .project .background #projectContainer .myProject .project_03 .mainpage .bg span {
+	font-size: 2.5rem; color: #fff; width: 100%;
+    position: absolute; left: 0; top: 45%;
+}
+.swiper-button-prev::after {display: none;}
+.swiper-button-next::after {display: none;}
+main .project .background .swiper-button-prev {}
+main .project .background .swiper-button-prev i {
+	font-size: 1.75rem; color: #2A420A;
+}
+main .project .background .swiper-button-next {}
+main .project .background .swiper-button-next i {
+	font-size: 1.75rem; color: #2A420A;
+}
+/* project slide4 */
+main .project .background #projectContainer .myProject .project_04 {
+	display: flex; flex-flow: row nowrap;
+	justify-content: center;
+	padding: 50px;
+}
+main .project .background #projectContainer .myProject .project_04 .page {}
+main .project .background #projectContainer .myProject .project_04 .page .detail {
+	padding: 50px;
+}
+main .project .background #projectContainer .myProject .project_04 .page .detail h2 {
+	font-size: 2rem; font-weight: 600;
+	font-family: "Alata", sans-serif;
+}
+main .project .background #projectContainer .myProject .project_04 .page .detail h2 span{
+	font-size: 1rem; font-weight: 600;
+}
+main .project .background #projectContainer .myProject .project_04 .page .detail p {
+	padding: 10px 0;
+	font-size: 1rem;
+	line-height: 1.5; 
+}
+main .project .background #projectContainer .myProject .project_04 .page .detail p span {
+	font-weight: 600; 
+}
+main .project .background #projectContainer .myProject .project_04 .page .detail .data {
+	text-align: center; padding: 10px;
+}
+main .project .background #projectContainer .myProject .project_04 .page .detail .data .git {
+	padding: 10px; font-size: 1.25rem; font-weight: 600;
+	font-family: "Alata", sans-serif;
+	color: #fff; letter-spacing: 2px;
+	background: #2A420A; border-radius: 15px;
+	margin-right: 30px;
+}
+main .project .background #projectContainer .myProject .project_04 .page .detail .data .git:hover {
+	background: #fff; color: #2A420A; border: 1px solid #2A420A;
+	transition: 1s;
+}
+main .project .background #projectContainer .myProject .project_04 .page .detail .data .plan {
+	padding: 10px; font-size: 1.25rem; font-weight: 600;
+	font-family: "Alata", sans-serif;
+	letter-spacing: 2px;
+	background: #fff; color: #2A420A; border: 1px solid #2A420A;
+	border-radius: 15px;
+	margin-right: 30px;
+}
+main .project .background #projectContainer .myProject .project_04 .page .detail .data .plan:hover {
+	background: #2A420A; color: #fff; border: 1px solid #2A420A;
+	transition: 1s;
+} 
+main .project .background #projectContainer .myProject .project_04 .page .detail .skills {
+	display: flex; flex-flow: row nowrap;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+main .project .background #projectContainer .myProject .project_04 .page .detail .skills p {
+	padding: 5px; border-radius: 10px;
+	background: #eee;
+	margin: 0 5px;
+}
+main .project .background #projectContainer .myProject .project_04 .mainpage {
+	position: relative;
+}
+main .project .background #projectContainer .myProject .project_04 .mainpage img {
+	width: 900px; height: 600px; border-radius: 30px;
+}
+main .project .background #projectContainer .myProject .project_04 .mainpage:hover .bg {
+	display: block;
+}
+main .project .background #projectContainer .myProject .project_04 .mainpage .bg {
+	text-align: center; position: absolute; left: 0; top: 0px; 
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 900px; height: 600px; border-radius: 30px;
+	display: none;
+}
+main .project .background #projectContainer .myProject .project_04 .mainpage .bg span {
+	font-size: 2.5rem; color: #fff; width: 100%;
+    position: absolute; left: 0; top: 45%;
+}
+/* work */
+main .work {
+	padding: 60px;
+	height: 100vh;
+	position: relative;
+}
+main .work .background {
+	width: 1600px; 
+	margin: 0 auto;
+	background: #fafafa;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 30px;
+	position: relative;
+	/* position: absolute; left: 4%; top: 8%; */
+}
+main .work .background .title {
+	padding: 40px;
+}
+main .work .background .title h1 {
+	font-size: 2.5rem; font-weight: 600;
+	font-family: "Alata", sans-serif;
+	color: #2A420A;
+}
+main .work .background .title p {
+	padding-top: 10px;
+	font-size: 1.3rem; font-weight: 600;
+}
+
+main .work .background .workPage #workContainer1 {
+	width: 95%; margin: 0 auto;
+    overflow: hidden;
+	padding-bottom: 30px; 
+}
+main .work .background .workPage #workContainer2 {
+	width: 95%; margin: 0 auto;
+    overflow: hidden; 
+	padding-bottom: 30px;
+}
+main .workDesign23 {text-align: center;}
+main .work .background .typo img {
+	position: absolute; right: 10px; top: 100px;
+}
+/* contact */
+main .contact {
+	padding: 60px;
+	height: 100vh;
+}
+main .contact .background {
+	width: 1000px; 
+	margin: 0 auto;
+	margin-top: 5%;
+	background: #fafafa;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 30px;
+	padding: 50px;
+	/* position: absolute; left: 24%; top: 20%; */
+}
+main .contact .background .between {
+	display: flex; flex-flow: row nowrap;
+	justify-content: space-between;
+}
+main .contact .background  .title {
+	padding: 40px;
+}
+main .contact .background .title h1 {
+	font-size: 2.5rem; font-weight: 600;
+	font-family: "Alata", sans-serif;
+	color: #2A420A;
+}
+main .contact .background .contact_page {
+	padding: 10px;
+	/* position: relative; left: -150px; */
+}
+main .contact .background .contact_page #contact_detail {
+	display: flex; flex-flow: column nowrap;
+	justify-content: center; 
+	/* position: relative; left: 35%; */
+}
+main .contact .background .contact_page #contact_detail fieldset {
+	text-align: center;
+}
+main .contact .background .contact_page #contact_detail fieldset label {
+	display: flex; flex-flow: column nowrap;
+	justify-content: center;
+	padding: 15px;
+}
+main .contact .background .contact_page #contact_detail fieldset label span {
+	font-size: 1.5rem;
+	padding-bottom: 10px;
+	text-align: left;
+}
+main .contact .background .contact_page #contact_detail fieldset label #name {
+	width: 300px;
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+main .contact .background .contact_page #contact_detail fieldset label #email {
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+main .contact .background .contact_page #contact_detail fieldset label #content {
+	height: auto;
+	border-radius: 5px;
+	border: none; resize: none;
+    font-weight: 500;
+    padding: 15px 16px;
+}
+main .contact .background .contact_page #contact_detail fieldset #send {
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 1.5rem;
+	border-radius: 5px;
+}
+main .contact .background .contact_page #contact_detail fieldset #send:hover {
+	color: #fff;
+	background: #2A420A;
+	transition: 0.5s;
+}
+main .contact .background  p {	
+	font-size: 0.875rem;
+	letter-spacing: 1.5px;
+	/* position: absolute; bottom: 0; */
+}
+main .contact .qrCode {width: 450px; position: relative;}
+main .contact .qrCode p .qrtouch {
+	font-size: 1.75rem; font-weight: 600;
+	position: absolute; right: -9%; top: -13%; rotate: 20deg;
+	animation: pingpong 1s linear infinite alternate-reverse;
+}
+main .contact .qrCode p .qr {
+	display: flex; flex-flow: column nowrap;
+	/* position: absolute; right: 30%; top: 45%; opacity: 1; */
+}
+main .contact .qrCode p .qr img {width: 70%; margin: 0 auto;}
+main .contact .qrCode p .qr span {
+	padding: 10px 15px;
+	text-align: center;
+}
+
+/* work_experience */
+.back {
+	font-size: 1.875rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    font-family: "Alata", sans-serif
+}
+.back:hover {
+	color: #fff;
+	transition: 0.3s;
+}
+.back i {padding-right: 10px;}
+.work_container {
+	margin: 0 auto;
+	padding: 100px;
+	height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+}
+.work_container .cm_tit {
+	font-weight: 600;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #2A420A;
+}
+.work_container .design_container {
+	display: flex; flex-flow: row nowrap;
+	justify-content: space-between;
+	padding: 30px 0;
+	position: relative;
+}
+.work_title1 h2{
+	font-size: 1.5rem;
+	padding-bottom: 15px;
+}
+.work_title1 p {
+	display: flex; flex-flow: column nowrap;
+}
+.work_title1 p span {
+	font-size: 1.2rem;
+	color: #777;
+	display: flex; flex-flow: row nowrap;
+	padding-bottom: 5px;
+}
+.work_title1 .click {
+	position: absolute;
+	font-weight: 600;
+	top: -7%; left: 23%;
+	font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Alata", sans-serif;
+    rotate: -7deg;
+    animation: pingpong 1s linear infinite alternate-reverse;
+}
+.work_title1 p span i {font-size: rem;}
+.work_container .work_box {
+	margin: 0 auto;
+	display: flex; flex-flow: row nowrap;
+	align-items: center;
+}	
+.work_box .design_box {
+	padding: 0 30px;
+}
+.work_box .design_box .box .btn-open {
+	width: 300px;
+}
+.work_box .design_box .box .btn-open img:hover {
+	transition: 1s;
+	transform: scale(1.3);
+}
+.work_box .design_box .box .btn-open img {
+	width: 300px;
+}
+.work_box .design_box .box2 .btn-open img {height: 381px;}
+.project_box {
+	display: flex; flex-flow: row nowrap;
+	padding-top: 30px;
+	border-top: 1px solid #2A420A;
+}
+.project_box .work_title2 {
+	display: flex; flex-flow: column nowrap;
+	width: 318px;
+}
+.project_box .work_title2 h2 {padding-bottom: 15px;}
+.project_box .work_title2 p {
+	font-size: 1.2rem;
+	color: #777;
+	padding-bottom: 5px;
+}
+.project_box .Nowon_container {
+	width: 100%; margin: 0 auto;
+    overflow: hidden;
+}
+.project_box p {width: 566px; height: auto;}
+.project_box p img {
+	width: 100%;
+}
+.Nowon_box {padding: 30px;}
+/* 팝업 */
+.layer-popup {
+	width: 100%; height: 100vh;
+  	position: fixed;
+  	background-color: rgba(0, 0, 0, 0.5);
+  	z-index: 910;
+	display: none;
+}
+.modal-dialog {
+	max-width: 100%; height: 95%;
+	position: absolute; left: 50%; top: 3%;
+    transform: translateX(-50%);
+	overflow-y: scroll;
+	background: #fff;
+	z-index: 920;
+	display: none;
+}
+.youngjae {
+	overflow: hidden;
+	height: auto;
+	top: 15%;
+	background: none;
+}
+.modal-content {
+	width: 100%; height: auto %;
+}
+.modal-dialog::-webkit-scrollbar {
+    width: 10px; 
+}
+
+.modal-dialog::-webkit-scrollbar-track {
+    background: #fff;
+}
+.modal-dialog::-webkit-scrollbar-button {
+    display: none;
+}
+.modal-dialog::-webkit-scrollbar-thumb { 
+    background: #777;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
+.modal-dialog::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+}
+
+/* 작업물 보러가기 버튼 */
+.site{
+    position: relative;
+    display: inline-block;
+	font-size: 1.6rem;
+	padding: 20px 30px;
+    color: #2A420A;
+	font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+.site:hover{
+    background: #3f660b;
+    color: #fff;
+	border-radius: 10px;
+}
+
+.site span{
+    position: absolute;
+    display: block;
+}
+.site span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg,transparent,#2A420A);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.site span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2A420A);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.site span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(270deg,transparent,#2A420A);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+.site span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2A420A);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+/* 반응형 */
+@media screen and (max-width: 770px) {
+	header .menuWrap {
+		justify-content: center;
+		padding: 0;
+	}
+	header .menuWrap .gnb li {
+		padding: 15px;
+	}
+	header .menuWrap .gnb li a {
+		font-size: 1.125rem;
+	}
+	header .menuWrap p {display: none;}
+	main .home {
+		display: flex; flex-flow: column nowrap;
+		height: auto;
+	}
+	main .home h1 {
+		text-align: left;
+		font-size: 4.8rem;
+		padding: 35px 15px 10px 15px;
+	}
+	main .home .homeBox {
+		padding: 0 15px;
+		flex-flow: column nowrap;
+	}
+	main .home .homeBox .detail {
+		flex-flow: row nowrap;
+		padding-bottom: 10px;
+	}
+	main .home .homeBox .detail .job {
+		font-size: 1.5rem;
+	}
+	main .home .homeBox .detail .name {
+		font-size: 1.5rem;
+	}
+	main .home .homeBox .bgimage {
+		display: flex;
+		justify-content: end;
+		margin-left: 0;
+	}
+	main .home .homeBox .bgimage img {
+		width: 100%; height: auto;
+	}
+	main .about {
+		display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+		padding: 15px;
+	}
+	main .about .background {
+		width: 100%;
+		margin-top: 10%;
+	}
+	main .about .background .title {
+		padding: 20px;
+	}
+	main .about .background .title h1 {
+		font-size: 1.5rem;
+	}
+	main .about .background .aboutBox {
+		flex-flow: column nowrap;
+		padding: 0;
+	}
+	main .about .background .aboutBox .detailPage .photo {text-align: center;}
+	main .about .background .aboutBox .detailPage .photo img {
+		height: 300px;
+	}
+	main .about .background .aboutBox .profile {
+		padding-left: 0;
+	}
+	main .about .background .aboutBox .profile .top {
+		width: 100%;
+		padding-top: 15px;
+		justify-content: space-between;
+	}
+	main .about .background .aboutBox .profile .top .text {
+		display: flex;
+	}
+	main .about .background .aboutBox .profile .top .text p {
+		font-size: 1.25rem;
+		padding: 0 20px 15px 0;
+	}
+	main .about .background .aboutBox .profile .top .text p span {
+		font-size: 1.125rem;
+	}
+	main .about .background .aboutBox .profile .btm {
+		padding: 0 25px;
+	}
+	main .about .background .aboutBox .profile .btm .detail {
+		padding-bottom: 15px;
+	}
+	main .about .background .aboutBox .profile .btm .detail h2 {
+		font-size: 1.25rem;
+	}
+	main .about .background .aboutBox .profile .btm .detail p {
+		font-size: 1.125rem;
+	}
+	main .sm_soft {
+		padding-bottom: 15px;
+	}
+	.site {
+		font-size: 1.2rem;
+		padding: 10px 15px;
+	}
+	main .skill {
+		width: 100%;
+		padding: 15px;
+		height: auto;
+	}
+	main .skill .background {
+		width: 100%;
+		margin-top: 10%;
+	}
+	main .skill .background .title {
+		padding: 20px;
+	}
+	main .skill .background .title h1 {
+		font-size: 1.5rem;
+	}
+	main .skill .background .title span {
+		display: none;
+	}
+	main .skill .background .skillBox {
+		padding: 20px;
+	}
+	main .skill .background .skillBox #skills {
+		gap: 20px;
+		grid-template-areas: "item1 item2 item3"
+							"item4 item5 item7"
+							"item8 item9 item10"
+							"item11 item12 item13";
+							
+	}
+	main .skill .background .skillBox #skills .item img {
+		width: 50px;
+	}
+	main .skill .background .skillBox #skills .item span {
+		display: none;
+	}
+	main .skill .background .skillBox #skills .item {
+		cursor: auto;
+	}
+	main .project {
+		width: 100%;
+		padding: 15px;
+		height: auto;
+	}
+	main .project .background {
+		width: 100%;
+		margin-top: 10%;
+	}
+	main .project .background .title {
+		padding: 20px;
+	}
+	main .project .background .title h1 {
+		font-size: 1.5rem;
+	}
+	main .project .background #projectContainer .myProject .project_03,
+	main .project .background #projectContainer .myProject .project_02,
+	main .project .background #projectContainer .myProject .project_01 {
+		flex-flow: column nowrap;
+		padding: 0 20px 20px 20px;
+	}
+	main .project .background #projectContainer .myProject .project_03 .page .detail,
+	main .project .background #projectContainer .myProject .project_01 .page .detail {
+		padding: 0 0 20px 0;
+	}
+	main .project .background #projectContainer .myProject .project_02 .page .detail {
+		display: flex; flex-flow: column nowrap;
+		padding: 0px;
+	}
+	main .project .background #projectContainer .myProject .project_03 .page .detail h2, 
+	main .project .background #projectContainer .myProject .project_02 .page .detail h2, 
+	main .project .background #projectContainer .myProject .project_01 .page .detail h2 {
+		font-size: 1.5rem;
+	}
+	main .project .background #projectContainer .myProject .project_03 .page .detail p, 
+	main .project .background #projectContainer .myProject .project_02 .page .detail p, 
+	main .project .background #projectContainer .myProject .project_01 .page .detail p {
+		padding: 10px 0 0 0;
+	}
+	main .project .background #projectContainer .myProject .project_03 .page .detail .data, 
+	main .project .background #projectContainer .myProject .project_02 .page .detail .data, 
+	main .project .background #projectContainer .myProject .project_01 .page .detail .data {
+		padding-top: 20px;
+	}
+	main .project .background #projectContainer .myProject .project_03 .page .detail .data .plan,
+	main .project .background #projectContainer .myProject .project_03 .page .detail .data .git, 
+	main .project .background #projectContainer .myProject .project_02 .page .detail .data .plan,
+	main .project .background #projectContainer .myProject .project_02 .page .detail .data .git, 
+	main .project .background #projectContainer .myProject .project_01 .page .detail .data .plan,
+	main .project .background #projectContainer .myProject .project_01 .page .detail .data .git {
+		font-size: 1rem;
+	}
+	main .project .background #projectContainer .myProject .project_03 .page .detail .skills, 
+	main .project .background #projectContainer .myProject .project_01 .page .detail .skills {
+		margin-top: 30px;
+		display: grid;
+		grid-template-areas: "p p p p p p p p";
+		row-gap: 10px;
+		text-align: center;
+	}
+	main .project .background #projectContainer .myProject .project_02 .page .detail .skills {
+		margin: 20px 0;
+		display: grid;
+		grid-template-areas: "p p p p p p p p p p p p p p p ";
+		row-gap: 10px;
+		text-align: center;
+	}
+	main .project .background #projectContainer .myProject .project_02 .mainpage,
+	main .project .background #projectContainer .myProject .project_01 .mainpage {
+		text-align: center;
+	}
+	main .project .background #projectContainer .myProject .project_03 .mainpage {
+		width: 88%;
+	}
+
+	main .project .background #projectContainer .myProject .project_02 .mainpage img,
+	main .project .background #projectContainer .myProject .project_01 .mainpage img {
+		width: 97%; height: 99%;
+	}
+	main .project .background #projectContainer .myProject .project_03 .mainpage .bg,
+	main .project .background #projectContainer .myProject .project_03 .mainpage img{
+		width: 100%; height: 99%;
+	}
+
+	main .project .background #projectContainer .myProject .project_02 .mainpage .bg,
+	main .project .background #projectContainer .myProject .project_01 .mainpage .bg {
+		width: 97%; height: 99%;
+		left: 1.4%;
+	}
+	main .project .background #projectContainer .myProject .project_03 .mainpage .bg span,
+	main .project .background #projectContainer .myProject .project_02 .mainpage .bg span,
+	main .project .background #projectContainer .myProject .project_01 .mainpage .bg span {
+		font-size: 1.5rem;
+	}
+	main .project .background .swiper-button-next,
+	main .project .background .swiper-button-prev {
+		top: 33%;
+	}
+	main .project .background #projectContainer .myProject .project_02 .page .detail .git {
+		width: 95px;
+		font-size: 1rem;
+		margin-top: 20px;
+	}
+	main .work {
+		padding: 15px;
+		height: auto;
+	}
+	main .work .background {
+		width: 100%;
+		margin-top: 7%;
+	}
+	main .work .background .title {
+		padding: 20px;
+	}
+	main .work .background .title h1 {
+		font-size: 1.5rem;
+	}
+	main .work .background .title p {
+		font-size: 1rem;
+	}
+	.workBox1 .swiper-slide img {
+		width: 250px;
+	}
+	.workBox2 .swiper-slide img {
+		width: 190px; height: 250px;
+		padding: 0 15px;
+	}
+	main .work .background .typo img {
+		display: none;
+	}
+	main .contact {
+		padding: 15px;
+		height: auto;
+	}
+	main .contact .background {
+		width: 100%;
+		padding: 20px;
+	}
+	main .contact .background .title {
+		padding: 20px;
+	}
+	main .contact .background .title h1 {
+		font-size: 1.5rem;
+	}
+	main .contact .background .contact_page #contact_detail fieldset label span {
+		font-size: 1.2rem;
+	}
+	main .contact .background .between {
+		justify-content: center;
+	}
+	main .contact .qrCode {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	header .menuWrap .gnb li {
+		padding: 15px 5px;
+	}
+
+}	
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 390px) {
+	header .menuWrap .gnb li a {
+		font-size: 1rem;
+	}
+	main .home h1 {
+		font-size: 3.7rem;
+	}
+	main .about .background .aboutBox .detailPage .photo img {
+		height: 200px;
+	}
+	main .about .background .aboutBox .profile .top {
+		flex-flow: column nowrap;
+	}
+	main .about .background .aboutBox .profile .top .text p {
+		font-size: 1.2rem;
+	}
+	main .about .background .aboutBox .profile .top .text p span {
+		font-size: 1rem;
+	}
+	main .about .background .aboutBox .profile .top .text p span:nth-child(4){
+		width: 50px;
+	}
+	main .about .background .aboutBox .profile .btm .detail h2 {
+		font-size: 1.2rem;
+	}
+	main .about .background .aboutBox .profile .btm .detail p {
+		font-size: 1rem;
+	}
+	.site {
+		font-size: 1rem;
+	}
+	main .project .background #projectContainer .myProject .project_01 .page .detail h2,
+	main .project .background #projectContainer .myProject .project_02 .page .detail h2,
+	main .project .background #projectContainer .myProject .project_03 .page .detail h2 {
+		font-size: 1.2rem;
+	}
+	main .project .background #projectContainer .myProject .project_03 .page .detail .skills, 
+	main .project .background #projectContainer .myProject .project_02 .page .detail .skills, 
+	main .project .background #projectContainer .myProject .project_01 .page .detail .skills {
+		display: none;
+	}
+	main .project .background #projectContainer .myProject .project_02 .page .detail .git {
+		margin: 10px;
+	}
+	main .project .background {
+		height: 500px;
+	}
+	main .project .background #projectContainer .myProject .project_01 .page .detail p {
+		display: none;
+	}
+	main .project .background #projectContainer .myProject .project_01 .page .detail p:nth-child(2),
+	main .project .background #projectContainer .myProject .project_01 .page .detail p:nth-child(3) {
+		display: block;
+	}
+	main .project .background .swiper-button-next, main .project .background .swiper-button-prev,
+	main .project .background .swiper-button-next, main .project .background .swiper-button-next {
+		display: none;
+	}
+	.workBox2 .swiper-slide img {
+		padding: 0 10px;
+	}
+}
