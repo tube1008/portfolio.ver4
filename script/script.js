@@ -31,7 +31,7 @@ let swiper01 = new Swiper('#workContainer1', {
     // 한 번에 보여줄 슬라이드 수
     slidesPerView: 3,
     // 슬라이드 사이의 간격
-    spaceBetween: 180,
+    spaceBetween: 400,
     // 한 번에 넘길 슬라이드 수
     slidesPerGroup: 1,
     loop : true,
@@ -70,12 +70,12 @@ let swiper04 = new Swiper('#workContainer4', {
   // 한 번에 보여줄 슬라이드 수
   slidesPerView: 3,
   // 슬라이드 사이의 간격
-  spaceBetween: 150,
+  //spaceBetween: 150,
   // 한 번에 넘길 슬라이드 수
   loop: true,
   autoplay: { delay: 2500, },
   slidesPerGroup: 1, 
-  centeredSlides: true,
+  centeredSlides: false,
   });
 
 // 팝업 열기
